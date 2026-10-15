@@ -52,15 +52,14 @@ Before recording, create at least three registered users and two projects.
 Recommended demonstration order:
 
 
-3. Create a project and choose one registered user as Project Lead.
-4. Create a second project with a Project Lead.
-5. Open View Projects and show both projects and their leads.
-6. Open Memberships and show that the Project Lead is already a member.
-7. Add another registered user to the first project.
-8. Add that same user to the second project to show a user can be in multiple projects.
-9. Try adding that same user to the same project again and show the duplicate-membership error.
-10. Remove a non-lead member.
-11. Show that the Project Lead cannot be removed.
-12. In MongoDB Atlas, show the `Projects` and `ProjectMemberships` collections.
-13. Briefly show `client/src/App.jsx`, `server/app.js`, and `server/server.js` and explain how the frontend calls the backend and how ObjectId references represent relationships.
-
+ Create a project and choose one registered user as Project Lead.
+ Create a second project with a Project Lead.
+ Open View Projects and show both projects and their leads.
+ Open Memberships and show that the Project Lead is already a member.
+ Add another registered user to the first project.
+ Add that same user to the second project to show a user can be in multiple projects.
+ Try adding that same user to the same project again and show the duplicate-membership error.
+ Remove a non-lead member.
+ Show that the Project Lead cannot be removed.
+ In MongoDB Atlas, show the `Projects` and `ProjectMemberships` collections.
+ Briefly show `client/src/App.jsx`, `server/app.js`, and `server/server.js` and explain how the frontend calls the backend and how ObjectId references represent relationships.
