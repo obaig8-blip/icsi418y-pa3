@@ -1,7 +1,5 @@
 # ICSI 418Y Programming Assignment 3
 
-This project extends Programming Assignment 2 by adding software projects and project memberships. It uses React for the frontend, Express/Node.js for the backend, and MongoDB Atlas for data storage.
-
 ## Features
 
 - Signup and login from PA2 still work.
@@ -23,16 +21,7 @@ The app uses these collections in the database:
 - `Projects`
 - `ProjectMemberships`
 
-`Projects.project_lead_id`, `ProjectMemberships.project_id`, and `ProjectMemberships.user_id` use MongoDB ObjectId references rather than copied usernames or project names.
 
-## Setup
-
-1. Install Node.js.
-2. Set up or use your existing MongoDB Atlas cluster.
-3. In Atlas, make sure your database user is active and your current IP address is allowed under Network Access.
-4. In the `server` folder, copy `.env.example` to a file named `.env`.
-5. Put your own MongoDB connection string in `MONGO_URI`. Do not commit `.env` to GitHub.
-6. Keep `DB_NAME=pa2_login_signup` if you want to reuse the same PA2 users.
 
 ### Backend
 
@@ -62,8 +51,7 @@ Before recording, create at least three registered users and two projects.
 
 Recommended demonstration order:
 
-1. Show that Signup still works.
-2. Show that Login still works.
+
 3. Create a project and choose one registered user as Project Lead.
 4. Create a second project with a Project Lead.
 5. Open View Projects and show both projects and their leads.
@@ -76,6 +64,3 @@ Recommended demonstration order:
 12. In MongoDB Atlas, show the `Projects` and `ProjectMemberships` collections.
 13. Briefly show `client/src/App.jsx`, `server/app.js`, and `server/server.js` and explain how the frontend calls the backend and how ObjectId references represent relationships.
 
-## Submission
-
-Before submitting, test the application, commit the final changes, push them to GitHub, verify the newest files are present, and make sure `.env` and `node_modules` were not committed. Submit the GitHub repository URL and the Zoom video through Brightspace.
