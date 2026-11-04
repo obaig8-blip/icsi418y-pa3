@@ -15,12 +15,13 @@ async function start() {
   const users = database.collection('users');
   const projects = database.collection('Projects');
   const memberships = database.collection('ProjectMemberships');
+  const userStories = database.collection('UserStories');
 
   await users.createIndex({ username: 1 }, { unique: true });
   await memberships.createIndex({ project_id: 1, user_id: 1 }, { unique: true });
 
   const port = Number(process.env.PORT) || 9000;
-  createApp(users, projects, memberships).listen(port, () => {
+  createApp(users, projects, memberships, userStories).listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
   });
 }
